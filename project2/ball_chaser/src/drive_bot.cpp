@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-#include "ball_chaser_sample/DriveToTarget.h"
+#include "ball_chaser/DriveToTarget.h"
 #include "geometry_msgs/Twist.h"
 
 
@@ -12,7 +12,7 @@ ros::Publisher motor_command_publisher;
 // This function should publish the requested linear x and angular velocities to the robot wheel joints
 // After publishing the requested velocities, a message feedback should be returned with the requested wheel velocities
 
-bool handle_drive_request(ball_chaser_sample::DriveToTarget::Request& req,ball_chaser_sample::DriveToTarget::Response& res)
+bool handle_drive_request(ball_chaser::DriveToTarget::Request& req,ball_chaser::DriveToTarget::Response& res)
 {
 
     ROS_INFO("DriveToTaget received - linear:%1.2f, Angular:%1.2f", (float)req.linear_x, (float)req.angular_z);

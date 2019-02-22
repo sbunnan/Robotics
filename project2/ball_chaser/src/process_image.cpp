@@ -64,7 +64,7 @@ void process_image_callback(const sensor_msgs::Image img)
 	        	}
 	        	else if ( (j >= width/3) && (j < 2*width/3))
 	        	{
-	            	drive_robot(0.5, 0);
+	            	drive_robot(0.3, 0);
 	            	return;
 	        	}
 	        	else if((j >= 2*width/3) && (j < width))
